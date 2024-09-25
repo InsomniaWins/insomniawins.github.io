@@ -242,7 +242,7 @@ body {
 .toolProjectElement, .toolProjectElementDisabled {
 	
 	background: linear-gradient(#282A36, #393C4C) padding-box,
-			linear-gradient(to top, #44475A, #44475A) border-box;
+			linear-gradient(to top, #6ad9ff, #44475A) border-box;
 }
 
 .gameProjectElementDisabled {
@@ -251,7 +251,7 @@ body {
 }
 
 .toolProjectElementDisabled {
-	filter: grayscale(100%);
+	filter: brightness(0.75) grayscale(70%);
 	cursor: default;
 }
 
@@ -260,6 +260,7 @@ body {
 	margin: 0px;
 	maring-bottom: 10px;
 	margin-top: 10px;
+	font-size: 16px;
 }
 
 

@@ -40,6 +40,28 @@ document.addEventListener("DOMContentLoaded", function() {
 		window.open("https://insomnia-wins.itch.io/shots-and-guns");
 	});
 	
+	let rollOfTheDiceProjectElement = document.getElementById("rollOfTheDiceProject");
+	rollOfTheDiceProjectElement.addEventListener("click", () => {
+		window.open("https://modrinth.com/mod/roll-of-the-dice");
+	});
+
+	let advancementCriterionProjectElement = document.getElementById("advancementCriterionProject");
+	advancementCriterionProjectElement.addEventListener("click", () => {
+		window.open("https://modrinth.com/mod/advancement-criterion");
+	});
+
+	let assignmentManagerProjectElement = document.getElementById("assignmentManagerProject");
+	assignmentManagerProjectElement.addEventListener("click", () => {
+		window.open("https://insomnia-wins.itch.io/assignment-manager");
+	});
+
+	let godotScriptAppenderProjectElement = document.getElementById("godotScriptAppenderProject");
+	godotScriptAppenderProjectElement.addEventListener("click", () => {
+		window.open("https://github.com/InsomniaWins/godot-script-appender/releases");
+	});
+
+	
+	
 	//"https://github.com/InsomniaWins/shots-and-guns/releases"
 	
 });
