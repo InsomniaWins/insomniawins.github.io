@@ -19,12 +19,25 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 	projectsRightButton.addEventListener("click", () => {
 		projectsScrollContainer.style.scrollBehavior = "smooth";
-		projectsScrollContainer.scrollLeft += projectWidth;
+
+		if (projectsScrollContainer.scrollLeft == projectsScrollContainer.scrollWidth - projectsScrollContainer.offsetWidth) {
+			projectsScrollContainer.scrollLeft = 0.0;
+		} else {
+			projectsScrollContainer.scrollLeft += projectWidth;
+		}
+
+		
 	});
 	
 	projectsLeftButton.addEventListener("click", () => {
 		projectsScrollContainer.style.scrollBehavior = "smooth";
-		projectsScrollContainer.scrollLeft -= projectWidth;
+
+		if (projectsScrollContainer.scrollLeft == 0.0) {
+			projectsScrollContainer.scrollLeft = projectsScrollContainer.scrollWidth;
+		} else {
+			projectsScrollContainer.scrollLeft -= projectWidth;
+		}
+
 	});
 	
 	

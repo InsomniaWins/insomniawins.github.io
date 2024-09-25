@@ -242,7 +242,7 @@ body {
 .toolProjectElement, .toolProjectElementDisabled {
 	
 	background: linear-gradient(#282A36, #393C4C) padding-box,
-			linear-gradient(to top, #6ad9ff, #44475A) border-box;
+			linear-gradient(to top, #6ad9f1, #44475A) border-box;
 }
 
 .gameProjectElementDisabled {
