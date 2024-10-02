@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	// add projects click ability
 	let settlersProjectElement = document.getElementById("settlersProject");
 	settlersProjectElement.addEventListener("click", () => {
-		//window.open("https://www.w3schools.com");
+		window.open("https://insomnia-wins.itch.io/settlers");
 	});
 	
 	let shotsAndGunsProjectElement = document.getElementById("shotsAndGunsProject");
