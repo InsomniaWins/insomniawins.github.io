@@ -1,7 +1,7 @@
 
 *, html {
-    margin:0;
-    padding:0;  
+	margin:0;
+	padding:0;  
 }
 
 @font-face {
@@ -10,29 +10,29 @@ src: url("./../../fonts/JetBrainsMono-Regular.ttf");
 }
 
 .gameTitle {
-    color: #ffffff;
-    font-family: "JetBrainsMono";
-    text-align: center;
-    font-size: 3.5vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    overflow-x: hidden;
+	color: #ffffff;
+	font-family: "JetBrainsMono";
+	text-align: center;
+	font-size: 3.5vw;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow-x: hidden;
 }
 
 .timelineMediaDate {
-    color: #C7CFDD;
-    font-family: "JetBrainsMono";
-    text-align: left;
-    font-size: 20px;
-    width: 60%;
+	color: #C7CFDD;
+	font-family: "JetBrainsMono";
+	text-align: left;
+	font-size: 20px;
+	width: 60%;
 }
 
 .timelineMediaTitle {
-    color: #C7CFDD;
-    font-family: "JetBrainsMono";
-    text-align: left;
-    font-size: 24px;
-    width: 60%;
+	color: #C7CFDD;
+	font-family: "JetBrainsMono";
+	text-align: left;
+	font-size: 24px;
+	width: 60%;
 }
 .timelineMediaDescription {
 	color: #7A7F87;
@@ -45,10 +45,10 @@ src: url("./../../fonts/JetBrainsMono-Regular.ttf");
 
 .codeBlock {
 	color: #7A7F87;
-    font-family: "JetBrainsMono";
-    text-align: left;
-    font-size: 18px;
-    width: 60%;
+	font-family: "JetBrainsMono";
+	text-align: left;
+	font-size: 18px;
+	width: 60%;
 	padding: 10px;
 	background-color: #272727AA;
 	border-radius: 10px;
@@ -56,23 +56,23 @@ src: url("./../../fonts/JetBrainsMono-Regular.ttf");
 }
 
 .timelineMediaDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4%;
-    padding-bottom: 4%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 4%;
+	padding-bottom: 4%;
 
 }
 
 .timelineMedia, .timelineVideo {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 20px/40px;
-    border-color: transparent;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 20px/40px;
+	border-color: transparent;
 }
 
 .timelineVideo {
-    aspect-ratio: 16/9;
+	aspect-ratio: 16/9;
 }
 
 
@@ -254,11 +254,11 @@ body {
 	overflow: visible;
 }
 .horizontalScrollDisplayDiv .horizontalScrollElement:first-child {
-    margin-left: auto;
+	margin-left: auto;
 }
 
 .horizontalScrollDisplayDiv .horizontalScrollElement:last-child {
-    margin-right: auto;
+	margin-right: auto;
 }
 
 
@@ -279,11 +279,11 @@ body {
 	overflow: visible;
 }
 .horizontalScrollDisplayDiv .horizontalScrollProjectsElement:first-child {
-    margin-left: auto;
+	margin-left: auto;
 }
 
 .horizontalScrollDisplayDiv .horizontalScrollProjectsElement:last-child {
-    margin-right: auto;
+	margin-right: auto;
 }
 
 .gameProjectElement, .gameProjectElementDisabled, .toolProjectElement, .toolProjectElementDisabled {
@@ -352,7 +352,7 @@ body {
 
 .linksDiv {
 
-    text-align: center;
+	text-align: center;
 
 }
 
