@@ -28,11 +28,27 @@ src: url("./../../fonts/JetBrainsMono-Regular.ttf");
 }
 
 .timelineMediaTitle {
-    color: #7A7F87;
+    color: #C7CFDD;
     font-family: "JetBrainsMono";
     text-align: left;
     font-size: 24px;
     width: 60%;
+}
+
+.codeBlock, .timelineMediaDescription {
+	color: #7A7F87;
+    font-family: "JetBrainsMono";
+    text-align: left;
+    font-size: 18px;
+    width: 60%;
+	padding: 10px;
+}
+
+.codeBlock {
+	background-color: #272727AA;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
 }
 
 .timelineMediaDiv {
@@ -371,6 +387,37 @@ body {
 	pointer-events: none;
 }
 
+
+
+
+.hyperlink, .hyperlinkDisabled {
+	color: #5AC54F;
+	font-family: "JetBrainsMono";
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.hyperlink:hover {
+	color: #D3FC7E;
+	font-family: "JetBrainsMono";
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.hyperlinkDisabled {
+	color: #898989;
+	font-family: "JetBrainsMono";
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: default;
+	pointer-events: none;
+}
+
+
+
 #projectsRightButton, #projectsLeftButton {
 	background-color: #44475A;
 	border-radius: 10px;
@@ -404,3 +451,4 @@ body {
 	border-top: #5AC54F solid 2px;
 	padding-top: 10px;
 }
+

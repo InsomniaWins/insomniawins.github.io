@@ -23,14 +23,43 @@
     
     <div class="timelineMediaDiv">
         <label class="timelineMediaDate">December 13 2024</label>
-        <label class="timelineMediaTitle">Ambient Occlusion & Directional Lighting</label>
+        <label class="timelineMediaTitle">Ambient Occlusion & Translucency</label>
         <iframe class="timelineVideo" width="60%" src="https://www.youtube.com/embed/kmn_ObLVj4c"></iframe>
+        <p class="timelineMediaDescription">
+            On this day, (roughly) I finished implementing ambient occlusion with the help of <a target="_blank" class="hyperlink" href="https://playspacefarer.com/ambient-occlusion/">this article</a>
+            written by the people at <a target="_blank" class="hyperlink" href="https://playspacefarer.com/">SPACEFARER</a>.
+            I also added the ability to define translucent blocks.
+            To implement translucency in chunk meshes, I needed to add an algorithm to sort their draw order.
+            Without this algorithm, the rendering would look like this:
+        </p>
+        <img class="timelineMedia" width="60%" src="./images/voxel_game_no_render_sort.png">
+        <p class="timelineMediaDescription">
+            You can see several artifacts in the viewport.
+            For example, the held item is rendered behind the chunks and the water's translucency cuts off the rendering of other chunks farther away.
+            The way the sorting algorithm works is a simple distance check. The renderer has a list of renderables.
+            It first uses java.util.List.sort() to sort the list of renderables based on their distance to the camera. 
+            Finally the renderer loops through the renderables and renders each on to the screen.
+            As you may have seen in the above video, this method fixes the rendering bugs previously mentioned.
+        </p>
     </div>
 
     <div class="timelineMediaDiv">
         <label class="timelineMediaDate">December 9 2024</label>
         <label class="timelineMediaTitle">Directional Lighting & Fog</label>
         <img class="timelineMedia" width="60%" src="https://raw.githubusercontent.com/InsomniaWins/backyard-rocketry/9a204704db35bab4dd6e59e731508e6ea03a96d3/screenshot4.png">
+        <p class="timelineMediaDescription">
+            I have now added a very basic fog effect along with directional lighting.
+            To implement directional lighting I had to change the way models are loaded.
+            Before, models only needed vertices, indices, and UVs; however, directional lighting requires normals.
+            Most games decide to add a normal vector per vertex.
+            Since Backyard Rocketry is a voxel game and sharp edges are expected in models, I decided I could get away with having a normal vector per face only.
+            This saves space in the block model's file since I will not need to write the normal for every vertex.
+        </p>
+        <p class="timelineMediaDescription">
+            The shader used for chunk meshes still requires each vertex to have a normal however, so I made the game add normals to the chunk mesh at runtime.
+            At the beginning of the game the normals are stored per face. When a chunk is meshing, it then duplicates the face's normal on every vertex.
+            Also, the fog I added is just the very simple fog effect almost every old game used. It is simply a distance check from the eye level of the camera.
+        </p>
     </div>
 
     <div class="timelineMediaDiv">
