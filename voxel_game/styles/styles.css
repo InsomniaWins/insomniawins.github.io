@@ -13,9 +13,10 @@ src: url("./../../fonts/JetBrainsMono-Regular.ttf");
     color: #ffffff;
     font-family: "JetBrainsMono";
     text-align: center;
-    font-size: 60px;
+    font-size: 3.5vw;
     padding-top: 20px;
     padding-bottom: 20px;
+    overflow-x: hidden;
 }
 
 .timelineMediaDate {
@@ -40,15 +41,18 @@ src: url("./../../fonts/JetBrainsMono-Regular.ttf");
     align-items: center;
     padding-top: 4%;
     padding-bottom: 4%;
-    
-    border-width: 111px;
+
 }
 
-.timelineMedia {
+.timelineMedia, .timelineVideo {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 20px/40px;
     border-color: transparent;
+}
+
+.timelineVideo {
+    aspect-ratio: 16/9;
 }
 
 
