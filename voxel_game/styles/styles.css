@@ -35,11 +35,12 @@ src: url("./../../fonts/JetBrainsMono-Regular.ttf");
     width: 60%;
 }
 .timelineMediaDescription {
-	color: #C7CFDD;
-    font-family: "JetBrainsMono";
-    text-align: left;
-    font-size: 20px;
-    width: 60%;
+	color: #7A7F87;
+	font-family: "JetBrainsMono";
+	text-align: left;
+	font-size: 18px;
+	width: 60%;
+	padding: 10px;
 }
 
 .codeBlock {
