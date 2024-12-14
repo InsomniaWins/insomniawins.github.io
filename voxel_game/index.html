@@ -53,9 +53,7 @@
             Before, models only needed vertices, indices, and UVs; however, directional lighting requires normals.
             Most games decide to add a normal vector per vertex.
             Since Backyard Rocketry is a voxel game and sharp edges are expected in models, I decided I could get away with having a normal vector per face only.
-            This saves space in the block model's file since I will not need to write the normal for every vertex.
-        </p>
-        <p class="timelineMediaDescription">
+            This saves space in the block model's file since I will not need to write the normal for every vertex.<br><br>
             The shader used for chunk meshes still requires each vertex to have a normal however, so I made the game add normals to the chunk mesh at runtime.
             At the beginning of the game the normals are stored per face. When a chunk is meshing, it then duplicates the face's normal on every vertex.
             Also, the fog I added is just the very simple fog effect almost every old game used. It is simply a distance check from the eye level of the camera.
