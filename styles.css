@@ -37,6 +37,20 @@ body {
 	color: white;
 }
 
+.codeBlock {
+	color: #7A7F87;
+	font-family: "JetBrainsMono";
+	text-align: left;
+	font-size: 18px;
+	width: 60%;
+	padding: 10px;
+	background-color: #272727AA;
+	border-radius: 10px;
+	margin: 10px;
+	display: block;
+	white-space: pre-wrap;
+}
+
 .pageNameHeading {
 	color: #D3FC7E;
 }

@@ -25,8 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		} else {
 			projectsScrollContainer.scrollLeft += projectWidth;
 		}
-
-		
 	});
 	
 	projectsLeftButton.addEventListener("click", () => {
@@ -43,6 +41,11 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 	
 	// add projects click ability
+	let backyardRocketryProjectElement = document.getElementById("voxelGameProject");
+	backyardRocketryProjectElement.addEventListener("click", () => {
+		window.open("https://insomniawins.github.io/voxel_game");
+	});
+
 	let settlersProjectElement = document.getElementById("settlersProject");
 	settlersProjectElement.addEventListener("click", () => {
 		window.open("https://insomnia-wins.itch.io/settlers");

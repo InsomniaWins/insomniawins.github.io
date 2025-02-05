@@ -20,6 +20,76 @@
         <a target="_blank" class="link" href="https://bsky.app/profile/insomnia-wins.bsky.social">Bluesky</a>
     </div>
     
+
+    <div class="timelineMediaDiv">
+        <label class="timelineMediaDate">February 4 2025</label>
+        <label class="timelineMediaTitle">New Style & Let There Be Sound</label>
+        <p class="timelineMediaDescription">
+            As with most games, style is important.
+            Without choosing a style, one will eventually run into clashing art within his or her project.
+            This problem can be observed in the many textures of Minecraft around 2015.
+            For my voxel game, I decided to stick with a style that is easy to maintain, has charm, and is unique. (compared to other voxel games)
+            I chose to make the style of its graphics' based on that of the PlayStation 1 (PS1).
+            I have limited the resolution to a *crisp* 320x240 and have implemented vertex snapping to simulate the artifacting of the PS1.
+        </p>
+        <img class="timelineMedia" width="60%" src="./images/voxel_game_ps1_style.png">
+        <p class="timelineMediaDescription">
+            My reasoning for choosing this style has been the relatively recent boom in PS1-styled indie games.
+            Many people have a fond nostalgia for this style, and there is (to my knowledge) not yet a voxel game with this style.
+            I have yet to decide if I should replace the textures with a higher resolution or different style to match the PS1's capabilities.
+            As a side-note, I have also removed the translucency of water which was JUST added in the previous update.
+        </p>
+        <p class="timelineMediaDescription">
+            Furthermore, I have added audio!
+            It's still in its infancy, so I don't have much to show, but I will demonstrate sound in the next gameplay video.
+            For now, enjoy this code snippet taken from the Button class demonstrating how simple playing a sound really is.
+        </p>
+        <code class="codeBlock">private void playPressSound() {
+
+    AudioManager audioManager = AudioManager.get();
+    AudioBuffer hoverSound = audioManager.getAudioBuffer("button_hover");
+
+    AudioPlayer audioPlayer = audioManager.playAudio(hoverSound, false, false, true);
+    audioPlayer.setPitch(2f);
+
+}</code>
+        <p class="timelineMediaDescription">
+            The playAudio method of the AudioManager class accepts 4 parameters. (or 3 if you want the audio to free from memory upon finishing playback)
+            The signature of the playAudio method is
+        </p>
+        
+        <code class="codeBlock">public AudioPlayer playAudio(
+    AudioBuffer audioBuffer,
+    boolean looping,
+    boolean relative,
+    boolean shouldFree
+) {
+    . . .
+}</code>
+
+        <p class="timelineMediaDescription">
+            The parameters are as follows:
+        </p>
+        <p class="timelineMediaDescription">
+            audio -> parameter is the buffer containing the audio data you want to play.
+        </p>
+        <p class="timelineMediaDescription">
+            looping -> determines whether the sound should stop or loop when playback finishes.
+        </p>
+        <p class="timelineMediaDescription">
+            relative -> determines whether the sound should be interpreted/listened from the global audio listener's spatial values such as position.
+        </p>
+        <p class="timelineMediaDescription">
+            shouldFree -> determines whether the AudioPlayer returned from this method should be freed from memory upon finishing playback.
+            If the method is called without the final argument, the default behavior is to free the player from memory and the end of the playback.
+        </p>
+        <p class="timelineMediaDescription">
+            Of course, you could just visit the
+            <a target="_blank" class="hyperlink" href="https://github.com/InsomniaWins/backyard-rocketry/blob/master/src/main/java/wins/insomnia/backyardrocketry/audio/AudioManager.java">GitHub</a>
+            repo for the project and view the code for the method yourself.
+        </p>
+    </div>
+
     
     <div class="timelineMediaDiv">
         <label class="timelineMediaDate">December 13 2024</label>
